@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "e2a99124-ef78-4e3a-bb5b-2eaa5438fd1d",
+		"name": "BuilderAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "460511"
+	},
+	"item": [
+		{
+			"name": "UsersList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8103/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8103/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n        \"first_name\": \"albert1\",\n\n        \"last_name\": \"einstein\",\n\n        \"email\": \"ae@relativity.com\"\n\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8103/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n        \"first_name\": \"albert16\",\n\n        \"last_name\": \"einstein\",\n\n        \"email\": \"ae@relativity.com\"\n\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8103/api/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8103/api/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8103/api/typeahead/iss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8103",
+					"path": [
+						"api",
+						"typeahead",
+						"iss"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
