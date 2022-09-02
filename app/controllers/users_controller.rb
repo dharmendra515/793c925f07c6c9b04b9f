@@ -58,7 +58,7 @@ class UsersController < ApplicationController
   end
 
   def search
-     key = params[:search]
+     key = params[:input]
     @users = User.where('first_name LIKE  ? OR last_name LIKE ? OR email LIKE ?', "%#{key}%", "%#{key}%", "%#{key}%")   
      render 'index'
   end

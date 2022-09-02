@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       post '/user' => 'users#create', :defaults => { :format => 'json' }
       put '/user/:id' => 'users#update', :defaults => { :format => 'json' }
       delete '/user/:id' => 'users#destroy', :defaults => { :format => 'json' }
-      get '/typeahead/:search' => 'users#search', :defaults => { :format => 'json' }
+      get '/typeahead/:input' => 'users#search', :defaults => { :format => 'json' }
 
   end
 end

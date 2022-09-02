@@ -22,3 +22,31 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+https://github.com/dharmendra515/793c925f07c6c9b04b9f
+
+
+**Clone application:**
+
+ `git clone git@github.com:dharmendra515/793c925f07c6c9b04b9f.git` \
+ `cd 793c925f07c6c9b04b9f`
+
+**Install bundler:**
+
+`gem install bundler` \
+`bundle install`
+
+
+**Start Server:**
+
+`rails s` 
+
+
+**API Postman Collection:**
+
+`BuilderAssignment.postman_collection.json` 
+
+**Run Rspec:**
+rspec
+
